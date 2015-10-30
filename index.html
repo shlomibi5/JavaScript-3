@@ -7,16 +7,16 @@
 	</head>
 
 	<body style="background: black;">
-		<div ng-controller="H1" style="text-align: center; border: 2px solid;font-size: 24px; width: 290px; margin: 0 auto;background: #ccc" >
+		<div ng-controller="H1" style="text-align: center; border: 2px solid;font-size: 24px; width: 290px; border-radius: 20px; margin: 0 auto;background: #ccc" >
 
-			אני אוהב:
+		בחר נושא לימוד
 			<h1 >{{languge}}</h1>
 <button ng-model="languge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png" style="width: 50px; margin-bottom: 10px;" /> </button>
-<button ng-model="languge"><img src="http://php.quicoto.com/wp-content/uploads/2013/06/css3.jpg" style="width: 50px; margin-bottom: 10px;" /></button>
+<button ng-model="languge"><img src="http://php.quicoto.com/wp-content/uploads/2013/06/css3.jpg" style="width: 50px; height: 50px; margin-bottom: 10px;" /></button>
 <button ng-model="languge"><img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" style="width: 50px; margin-bottom: 10px;" /></button>
 <button ng-model="languge"><img src="http://cdn.javabeat.net/wp-content/uploads/2014/05/angularjs.png" style="width: 50px; margin-bottom: 10px;" /></button>
 		
-		<form>בחר שפת תוכנה
+		<form>
 			<select ng-model="languge">
 				<option> html</option>
 				<option >css</option>
@@ -24,12 +24,12 @@
 				<option >angular</option>
 			</select>
 			
-		</form>
+	בחר שפת תוכנה	</form>
 		</div>
 		<script>
 			var app = angular.module("MyApp", []);
 			app.controller("H1", function($scope) {
-				$scope.languge = "html";
+				$scope.languge = "בחר שפת תכנות";
 			});
 		</script>
 	</body>
